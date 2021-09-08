@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+// **************************** Fonts Import
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// **************************** Fonts
+$fontPacifico: 'Pacifico', cursive;
+
+
+body {
+    background-image: url(./images/02f151ebd4aa513356e925263df2b152.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
+.name-div {
+    h1 {
+        color: white;
+        font-size: 5em;
+        text-align: center;
+        font-family: $fontPacifico;
+        line-height: 1.1;
+        span {
+            margin-left: 2em;
+        }
+    }
+}
+
+.ships-block {
+    height: 75vh;
+    margin: 25px 0;
+    
+
+    .ships {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 75px;
+        position: relative;
+
+        .ship-one, .ship-two  {
+            position: relative;
+            top: 250px;
+           
+          
+            .ship-1, .ship-2 {
+                width: 200px;
+            }
+
+            .shoot-1 {
+                position: relative;
+                width: 110px;
+                right: -45px;
+                bottom: 330px;
+                transform: rotate(-85deg);
+                transition: 2s;
+
+            }
+            .shoot-2 {
+                position: relative;
+                width: 150px;
+                left: -73px;
+                bottom: 53px;
+                transform: rotate(65deg);
+                transition: 2s;
+
+            }
+            .disploy {
+                // display: none;
+        
+            }
+        }
+        .ship-one {
+            transform: rotate(90deg);
+
+        }
+        .ship-two {
+            transform: rotate(-65deg);
+
+        }
+    }
+
+   
+}

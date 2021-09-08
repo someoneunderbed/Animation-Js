@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background-image: url(./images/02f151ebd4aa513356e925263df2b152.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.name-div h1 {
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  line-height: 1.1;
+}
+
+.name-div h1 span {
+  margin-left: 2em;
+}
+
+.ships-block {
+  height: 75vh;
+  margin: 25px 0;
+}
+
+.ships-block .ships {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 75px;
+  position: relative;
+}
+
+.ships-block .ships .ship-one, .ships-block .ships .ship-two {
+  position: relative;
+  top: 250px;
+}
+
+.ships-block .ships .ship-one .ship-1, .ships-block .ships .ship-one .ship-2, .ships-block .ships .ship-two .ship-1, .ships-block .ships .ship-two .ship-2 {
+  width: 200px;
+}
+
+.ships-block .ships .ship-one .shoot-1, .ships-block .ships .ship-two .shoot-1 {
+  position: relative;
+  width: 110px;
+  right: -45px;
+  bottom: 330px;
+  -webkit-transform: rotate(-85deg);
+          transform: rotate(-85deg);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.ships-block .ships .ship-one .shoot-2, .ships-block .ships .ship-two .shoot-2 {
+  position: relative;
+  width: 150px;
+  left: -73px;
+  bottom: 53px;
+  -webkit-transform: rotate(65deg);
+          transform: rotate(65deg);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.ships-block .ships .ship-one {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.ships-block .ships .ship-two {
+  -webkit-transform: rotate(-65deg);
+          transform: rotate(-65deg);
+}
+/*# sourceMappingURL=style.css.map */
